@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+export const prerender = true;
 // 1. Genera una nueva ruta para cada entrada de colección
 export async function getStaticPaths() {
     const postsEntries = await getCollection("posts");
