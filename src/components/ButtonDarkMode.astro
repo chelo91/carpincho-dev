@@ -1,0 +1,25 @@
+---
+
+---
+
+<button
+    id="btn-toggle-theme"
+    type="button"
+    class="btn btn-black"
+    onclick="clickBtnThemeMode()"
+    ><i class="fa-solid fa-moon"></i>/<i class="fa-solid fa-sun"></i>
+</button>
+
+<script is:inline>
+// Asignar la función de cambio de tema a un botón o elemento HTML
+function clickBtnThemeMode() {
+    let theme = localStorage.getItem("theme");
+    if (theme === "light") {
+        theme = "dark";
+    } else {
+        theme = "light";
+    }
+    localStorage.setItem("theme", theme);
+    document.documentElement.dataset.bsTheme = theme;
+}
+</script>

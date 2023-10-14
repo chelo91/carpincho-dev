@@ -1,4 +1,5 @@
 ---
+import ButtonDarkMode from "./ButtonDarkMode.astro";
 import Finder from "./Finder.astro";
 const pages = [
 	{
@@ -17,37 +18,39 @@ const pages = [
 ];
 ---
 
-<header class="pb-3 border-bottom">
-	<div class="container">
-		<div
-			class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-		>
-			<div>
-				<a class="navbar-brand fs-2" href="/">CarpinchoDev</a>
-			</div>
-			<ul
-				class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-			>
-				{
-					pages.map((page) => {
-						return (
-							<li>
-								<a
-									href={page.url}
-									target={page.target}
-									class="nav-link px-2 link-body-emphasis"
-								>
-									{page.name}
-								</a>
-							</li>
-						);
-					})
-				}
-			</ul>
-			<Finder />
+<header class="pb-3 border-bottom"></header>
+<div class="container">
+	<div
+		class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+	>
+		<div>
+			<a class="navbar-brand fs-2" href="/">CarpinchoDev</a>
 		</div>
+		<ul
+			class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+		>
+			{
+				pages.map((page) => {
+					return (
+						<li>
+							<a
+								href={page.url}
+								target={page.target}
+								class="nav-link px-2 link-body-emphasis"
+							>
+								{page.name}
+							</a>
+						</li>
+					);
+				})
+			}
+		</ul>
+		<span class="navbar-text">
+			<ButtonDarkMode />
+		</span>
+		<Finder />
 	</div>
-</header>
+</div>
 
 <style>
 	.navbar-brand {
