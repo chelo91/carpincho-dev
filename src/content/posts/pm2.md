@@ -1,15 +1,13 @@
 ---
-title: PM2
-date: "2022-10-07"
-author: "Chelo"
-description: "Paquete de Node para levantar un proyecto"
-tags: ["node","linux"
-]
+title: "Qué es PM2?"
 slug: "pm2"
+description: "Paquete de Node para levantar un proyectos en el servidor"
+date: "2023-10-14"
+tags: ["node","linux"]
+draft: false
 ---
 
-## Qué es PM2?
-Es un paquete de Node que sirve para hacer gestión de procesos
+Es un paquete de Node que sirve para levantar un proyecto en el servidor, es decir, que se mantenga corriendo en el servidor.
 
 ## Para que sirve SCP?
 A diferencia de Nodemon o ejecutar directo con Node, PM2 está pensado para producción con caracteristicas como:
