@@ -60,17 +60,5 @@ const { title } = Astro.props;
 			<slot />
 		</div>
 		<Footer />
-		<style is:global>
-			@media screen and (min-width: 991px) {
-				#main-container {
-					min-height: 75vh;
-				}
-			}
-			@media screen and (max-width: 990px) {
-				#main-container {
-					min-height: 65vh;
-				}
-			}
-		</style>
 	</body>
 </html>

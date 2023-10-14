@@ -5,7 +5,9 @@ export const prerender = true;
 // 1. Genera una nueva ruta para cada entrada de colección
 export async function getStaticPaths() {
     const postsEntries = await getCollection("posts");
-    const postsFiltered = postsEntries.filter((post) => !post.data.draft && post.slug);
+    const postsFiltered = postsEntries.filter(
+        (post) => !post.data.draft && post.slug,
+    );
     return postsFiltered.map((post) => ({
         params: { slug: post.slug },
         props: { post },
@@ -17,6 +19,16 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
+    <nav class="nav-posts">
+        <a href="/"><i class="fa-solid fa-arrow-left"></i> Atras</a>
+        <!--<a href="/posts">Siguiente</a>-->
+    </nav>
     <h3>{post.data.title}</h3>
     <Content />
 </Layout>
+
+<style>
+    .nav-posts {
+        padding-bottom: 10px;
+    }
+</style>

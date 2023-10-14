@@ -10,9 +10,20 @@ body {
     padding: 20px;
 }
 
+@media screen and (min-width: 991px) {
+    #main-container {
+        min-height: 75vh;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #main-container {
+        min-height: 65vh;
+    }
+}
+
 [data-bs-theme="light"] {
     --bs-body-bg: floralwhite;
 }
-[data-bs-theme="dark"] {
-    
-}
+
+[data-bs-theme="dark"] {}
