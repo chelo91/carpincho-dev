@@ -7,13 +7,14 @@
     type="button"
     class="btn btn-black"
     onclick="clickBtnThemeMode()"
-    ><i class="fa-solid fa-moon"></i>/<i class="fa-solid fa-sun"></i>
+    ><i id="theme-icon" class="fa-solid fa-sun"></i>
 </button>
 
 <script is:inline>
+let theme = localStorage.getItem("theme") || "dark";
+refreshButton();
 // Asignar la función de cambio de tema a un botón o elemento HTML
 function clickBtnThemeMode() {
-    let theme = localStorage.getItem("theme");
     if (theme === "light") {
         theme = "dark";
     } else {
@@ -21,5 +22,17 @@ function clickBtnThemeMode() {
     }
     localStorage.setItem("theme", theme);
     document.documentElement.dataset.bsTheme = theme;
+    refreshButton(theme);
+}
+function refreshButton() {
+    // Actualizar el icono en el botón según el tema
+    const themeIcon = document.getElementById("theme-icon");
+    if (theme === "light") {
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+    } else {
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+    }
 }
 </script>
