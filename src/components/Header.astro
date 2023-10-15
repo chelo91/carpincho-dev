@@ -22,44 +22,75 @@ const pages = [
 ];
 ---
 
-<header class="pb-3 border-bottom"></header>
-<div class="container">
-	<div
-		class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-	>
-		<div>
-			<a class="navbar-brand fs-2" href="/">CarpinchoDev</a>
-		</div>
-		<ul
-			class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+<header class="p-3 border-bottom">
+	<div class="container">
+		<div
+			class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
 		>
-			{
-				pages.map((page) => {
-					return (
-						<li>
-							<a
-								href={page.url}
-								target={page.target}
-								class="nav-link px-2 link-body-emphasis"
-							>
-								{page.name}
-							</a>
-						</li>
-					);
-				})
-			}
-		</ul>
-		<!--<Finder />-->
-		<span class="navbar-text">
-			<ButtonDarkMode />
-		</span>
+			<div id="div-brand">
+				<a
+					href="/"
+					class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+				>
+					<img id="img-brand" src="images/capy.png" />
+					<span class="navbar-brand fs-4"> CarpinchoDev</span>
+				</a>
+			</div>
+			<ul
+				class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+			>
+				{
+					pages.map((page) => {
+						return (
+							<li class="">
+								<a
+									href={page.url}
+									target={page.target}
+									class="nav-link px-2 link-body-emphasis"
+								>
+									{page.name}
+								</a>
+							</li>
+						);
+					})
+				}
+			</ul>
+
+			<!--<form
+				class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+				role="search"
+				data-dashlane-rid="c500a30dc6b85ab1"
+				data-form-type=""
+			>
+				<input
+					type="search"
+					class="form-control"
+					placeholder="Search..."
+					aria-label="Search"
+					data-dashlane-rid="41ccf29ac02942b6"
+					data-form-type=""
+				/>
+			</form>-->
+
+			<div class="text-end">
+				<ButtonDarkMode />
+			</div>
+		</div>
 	</div>
-</div>
+</header>
 
 <style>
 	.navbar-brand {
 		font-family: "Roboto Mono", monospace;
-		font-weight: 600;
-		padding-right: 25px;
+	}
+	#img-brand {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	@media (min-width: 992px) {
+		#div-brand {
+			margin-right: 30px;
+		}
 	}
 </style>
