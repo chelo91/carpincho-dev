@@ -12,4 +12,4 @@ draft: false
 ### Por qué un blog?
 Hay muchas veces que nos preguntamos porque esto funciona de cierta forma o como poder resolver algun problema que se nos presenta, y muchas veces la respuesta está en internet, pero no siempre es fácil encontrarla. Por ese motivo decidí crear este blog para facilitar un poco todo eso.
 
-Espero que les guste, también el proyecto del blog va a estar en <a href="https://github.com/chelo91" target="_blank">Github</a> y si tienen alguna sugerencia o comentario, pueden contactarme por <a href="https://twitter.com/soyxhelo" target="_blank">Twitter</a> o <a href="https://instagram.com/soych3lo" target="_blank">Instagram</a>.
+Espero que les guste, también el proyecto del blog va a estar en <a href="https://github.com/chelo91/carpincho-dev" target="_blank">Github</a> y si tienen alguna sugerencia o comentario, pueden contactarme por <a href="https://twitter.com/soyxhelo" target="_blank">Twitter</a> o <a href="https://instagram.com/soych3lo" target="_blank">Instagram</a>.
