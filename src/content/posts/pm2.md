@@ -7,16 +7,17 @@ tags: ["node","linux"]
 draft: false
 ---
 
+### Qué es PM2?
 Es un paquete de Node que sirve para levantar un proyecto en el servidor, es decir, que se mantenga corriendo en el servidor.
 
-## Para que sirve SCP?
+### Para que sirve SCP?
 A diferencia de Nodemon o ejecutar directo con Node, PM2 está pensado para producción con caracteristicas como:
 - Ver el estado de a tiempo real de varias ejecuciones de Node
 - Manejo de Logs
 - Reinicio del proceso en caso de que se haya detenido
 - Entre otros 
 
-## Instalacion
+### Instalacion
 - Con yarn:
 ```bash
 yarn global add pm2
@@ -27,7 +28,7 @@ yarn global add pm2
 npm install pm2 -g
 ```
 
-## Funciones
+### Funciones
 - Lista aplicaciones corriendo
 ```bash
 pm2 list

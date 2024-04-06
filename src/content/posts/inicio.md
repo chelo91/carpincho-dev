@@ -7,6 +7,8 @@ tags: ["blog"]
 draft: false
 ---
 
+### Bienvenidos
+
 **Bienvenido a mi blog**, este es un proyecto personal con el objetivo de poder compartir conocimiento que he ido adquiriendo a lo largo de mis experiencias como desarrollador. Principalmente comandos del día a día, tips útiles, etc.
 
 ### Por qué un blog?

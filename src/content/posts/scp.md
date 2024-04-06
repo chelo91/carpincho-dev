@@ -7,6 +7,7 @@ tags: ["linux"]
 draft: false
 ---
 
+### Qué es SCP?
 Es un comando de Linux para hacer una transferencia de archivo entre 2 host.
 
 ### Para que sirve SCP?
