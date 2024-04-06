@@ -12,7 +12,7 @@
 - [ ] Finder bar
 - [ ] Categories
 - [ ] Tags 
-- [ ] Comments
+- [X] Comments (Powered by Giscus)
 
 ## How to run
 1. Clone the repo
